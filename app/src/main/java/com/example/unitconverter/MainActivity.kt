@@ -15,6 +15,8 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowDropDown
 import androidx.compose.material3.Button
+import androidx.compose.material3.DropdownMenu
+import androidx.compose.material3.DropdownMenuItem
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedTextField
@@ -64,15 +66,66 @@ fun UnitConverter(){
                     Text("Select")
                     Icon(
                         Icons.Default.ArrowDropDown,
-                        contentDescription = " Arrow Down")
+                        contentDescription = " Arrow Down"
+                    )
+                }
+                DropdownMenu(expanded = true, onDismissRequest = { }) {
+                    DropdownMenuItem(
+                        text = { Text("Centimeters") },
+                        onClick = {}
+                    )
+
+
+                    DropdownMenuItem(
+                        text = { Text("Meters") },
+                        onClick = {}
+                    )
+
+
+                    DropdownMenuItem(
+                        text = { Text("Feet") },
+                        onClick = {}
+                    )
+
+
+                    DropdownMenuItem(
+                        text = { Text("Millimeters") },
+                        onClick = {}
+                    )
                 }
             }
 
             Box {
                 Button(onClick = {}) {
                     Text("Select")
-                    Icon(Icons.Default.ArrowDropDown,
-                        contentDescription = " Arrow Down")
+                    Icon(
+                        Icons.Default.ArrowDropDown,
+                        contentDescription = " Arrow Down"
+                    )
+                }
+                DropdownMenu(expanded = true, onDismissRequest = { }) {
+                    DropdownMenuItem(
+                        text = { Text("Centimeters") },
+                        onClick = {}
+                    )
+
+
+                    DropdownMenuItem(
+                        text = { Text("Meters") },
+                        onClick = {}
+                    )
+
+
+                    DropdownMenuItem(
+                        text = { Text("Feet") },
+                        onClick = {}
+                    )
+
+
+                    DropdownMenuItem(
+                        text = { Text("Millimeters") },
+                        onClick = {}
+                    )
                 }
             }
         }
